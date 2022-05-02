@@ -13,7 +13,7 @@ function Cards({ image, ...props }) {
   )
 }
 
-// если без defaultProps :{image && <img src={image.src} className="card-img-top" alt={image.alt} />}
+//2 вариант: если без defaultProps ,  тогда выше условный рендеринг :{image && <img src={image.src} className="card-img-top" alt={image.alt} />}
 Cards.defaultProps = {
   image: {
     src: null,
